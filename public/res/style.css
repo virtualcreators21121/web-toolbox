@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* themeing for the app goes here */
+:root{
+    font-family: 'Ubuntu', sans-serif;
+    --color-primary: #704810;
+    --color-secondary: #465801;
+    --color-accent: #e6d681;
+    --color-accent-dark: #806f19;
+    --color-accent-light: #e6d894;
+    --background: linear-gradient(45deg ,#180e00,#000a05);
+}
+
+::-webkit-scrollbar{
+    width: .4rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 4rem;
+    background: var(--color-accent-light);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--color-primary);
+}
+
+div::-webkit-scrollbar{
+    width: .4rem;
+}
+div::-webkit-scrollbar-thumb{
+    border-radius: 4rem;
+    background: var(--color-accent-light);
+}
+
+div::-webkit-scrollbar-track{
+    background-color: var(--color-primary);
+}
+
+.primary{
+    background-color: var(--color-primary);
+}
+.secondary{
+    background-color: var(--color-secondary);
+}
+.accent{
+    background-color: var(--color-accent);
+    color: #000;
+}
+.accent-light{
+    background-color: var(--color-accent-light);
+    color: #000;
+}
+.accent-dark{
+    background-color: var(--color-accent-dark);
+    color: #000;
+}
+.heading{
+    font-size: 32pt;
+    font-weight: 750;
+}
+.lable{
+    font-size: 18pt;
+    font-weight: 700;
+}
+.title{
+    font-size: 24pt;
+    font-weight: 600;
+}
+.normal{
+    font-size: 16pt;
+    font-weight: 500;
+}
+.normal-bold{
+    font-size: 16pt;
+    font-weight: 700;
+}
+.small{
+    font-size: 10pt;
+    font-weight: 600;
+}
+.light{
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg ,#180e00,#000a05);
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1rem);
+}
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    transition: all 0.25s;
+  }
+  
+  .hamburger__top-bun,
+  .hamburger__bottom-bun {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    width: 18px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.25s;
+  }
+  
+  .hamburger{
+      display: none;
+  }
+
+  .hamburger__top-bun {
+    top: 23px;
+    height: .1rem;
+    transform: translateY(-3px);
+  }
+  
+  .hamburger__bottom-bun {
+    bottom: 23px;
+    height: .1rem;
+    transform: translateY(3px);
+  }
+    
+  .open .hamburger__top-bun {
+    transform: 
+      rotate(45deg) 
+      translateY(0px);
+  }
+  
+  .open .hamburger__bottom-bun {
+    transform: 
+      rotate(-45deg) 
+      translateY(-1px);
+  } 
+.top-bar-element{
+    min-width: 7rem;
+}
+
+.page-content{
+    padding: 2rem;
+    height: 100%;
+    margin-top: 3rem;
+}
+.test-div{
+    margin: 1rem;
+    width: fit-content;
+    padding: .2rem .7rem .2rem .7rem;
+    border-radius: .4rem;
+}
+/* animatinos */
+.hamburger:hover [class*="-bun"] {
+    background: #999;
+  }
+  

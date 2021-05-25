@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px){
+    nav{
+        justify-content: flex-start;
+        padding: 2rem;
+        transition: 600ms;
+    }
+    .top-bar-element{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
