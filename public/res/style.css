@@ -7,7 +7,7 @@
     --color-accent: hsl(50, 67%, 70%);
     --color-accent-dark: hsl(50, 67%, 30%);
     --color-accent-light: hsl(50, 62%, 74%);
-    --background: linear-gradient(45deg ,#180e00,#000a05);
+    --background: linear-gradient(45deg ,#382100,#01381c);
 }
 
 ::-webkit-scrollbar{
@@ -94,8 +94,7 @@ nav{
     top: 0;
     left: 0;
     padding: 1rem;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     width: 100%;
     z-index: 1;
     color: #ddd;

@@ -2,6 +2,7 @@
     nav{
         justify-content: flex-start;
         padding: 2rem;
+        position: -webkit-sticky;
         min-width: 100%;
         transition: 600ms;
     }
