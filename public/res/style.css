@@ -2,11 +2,11 @@
 /* themeing for the app goes here */
 :root{
     font-family: 'Ubuntu', sans-serif;
-    --color-primary: #704810;
-    --color-secondary: #465801;
-    --color-accent: #e6d681;
-    --color-accent-dark: #806f19;
-    --color-accent-light: #e6d894;
+    --color-primary: hsl(35, 75%, 25%);
+    --color-secondary: hsl(72, 98%, 17%);
+    --color-accent: hsl(50, 67%, 70%);
+    --color-accent-dark: hsl(50, 67%, 30%);
+    --color-accent-light: hsl(50, 62%, 74%);
     --background: linear-gradient(45deg ,#180e00,#000a05);
 }
 
@@ -84,8 +84,7 @@ div::-webkit-scrollbar-track{
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg ,#180e00,#000a05);
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg ,#180e00,#000a05) no-repeat;
     color: #fff;
     min-height: 100vh;
 }
@@ -95,12 +94,14 @@ nav{
     top: 0;
     left: 0;
     padding: 1rem;
-    position: fixed;
-    width: 100vw;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
     z-index: 1;
+    color: #ddd;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(2rem);
 }
 .hamburger {
     cursor: pointer;
@@ -120,7 +121,7 @@ nav{
     height: 1px;
     background: #fff;
     transform: rotate(0);
-    transition: all 0.25s;
+    transition: all 400ms;
   }
   
   .hamburger{
@@ -151,6 +152,7 @@ nav{
       translateY(-1px);
   } 
 .top-bar-element{
+    cursor: pointer;
     min-width: 7rem;
 }
 
@@ -165,8 +167,16 @@ nav{
     padding: .2rem .7rem .2rem .7rem;
     border-radius: .4rem;
 }
+
+.hamburger:focus{
+    outline: none !important;
+}
+
 /* animatinos */
+.top-bar-element:hover{
+    color: #fff;
+}
 .hamburger:hover [class*="-bun"] {
     background: #999;
-  }
+}
   

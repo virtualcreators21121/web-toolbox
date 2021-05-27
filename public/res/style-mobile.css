@@ -2,6 +2,7 @@
     nav{
         justify-content: flex-start;
         padding: 2rem;
+        min-width: 100%;
         transition: 600ms;
     }
     .top-bar-element{
@@ -10,4 +11,6 @@
     .hamburger{
         display: block;
     }
+    /* .open-nav{} */
+    
 }
