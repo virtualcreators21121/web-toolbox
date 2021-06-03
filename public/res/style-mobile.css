@@ -1,17 +1,43 @@
 @media only screen and (max-width: 600px){
-    nav{
+    .top-bar{
         justify-content: flex-start;
         padding: 2rem;
-        position: -webkit-sticky;
         min-width: 100%;
         transition: 600ms;
     }
+    .top-bar-element-lable{
+        padding-left: .4rem;
+    }
     .top-bar-element{
         display: none;
+
     }
     .hamburger{
+        z-index: 2;
         display: block;
     }
-    /* .open-nav{} */
-    
+    .open{
+        top:2rem;
+        left: 2rem;
+    }
+    .open-nav{
+        height: 100vh;
+        transition: 600ms;
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+    .nav-link{
+        max-height: 4rem;
+    flex:1;
+    }
+    .on-open-show-items{   
+        max-height: 4rem;
+        display: flex;
+        width: 100vw;
+        flex:1;
+        justify-content: center;
+        align-items: center;
+        transition: 600ms;
+    }
 }

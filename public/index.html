@@ -6,64 +6,56 @@
     <meta name="theme-color" content="#01381c" />
     <title>Web Toolbox</title>
 
-    <script src="https://kit.fontawesome.com/121832da78.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/121832da78.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- link to stylesheets -->
     <link rel="stylesheet" type="text/css" href="res/style.css" />
     <link rel="stylesheet" type="text/css" href="res/style-mobile.css" />
   </head>
   <body>
-    <nav class="top-bar">
-      <div id = "home" class="home top-bar-element" >
-        <i class = "fa fa-home"></i>
-        <label class = "top-bar-element-lable">Home</label>
-      </div>
-      <div id = "about" class="about top-bar-element">
-        <i class = "fa fa-globe"></i>
-        <label class = "top-bar-element-lable">About</label>
-      </div>
-      <div id = "contact" class="contact top-bar-element">
-        <i class = "far fa-id-card"></i>
-        <label class = "top-bar-element-lable">Contact</label>
-      </div>
-      <div id = "forum" class="forum top-bar-element">
-        <i class = "far fa-newspaper"></i>
-        <label class = "top-bar-element-lable">Forum</label>
-      </div>
-      <div class="top-bar-element">
-        <i class = "fa fa-sign-in-alt"></i>
-        <label class = "top-bar-element-lable">Login</label>
-      </div>
+    <nav id="top-bar" class="top-bar">
+      <a href="index.html" class="nav-link">
+        <div id="home" class="home top-bar-element">
+          <i class="fa fa-home"></i>
+          <label class="top-bar-element-lable">Home</label>
+        </div>
+      </a>
+      <a href="" class="nav-link">
+        <div id="forum" class="forum top-bar-element">
+          <i class="far fa-newspaper"></i>
+          <label class="top-bar-element-lable">Forum</label>
+        </div>
+      </a>
+      <a href="about.html" class="nav-link">
+        <div id="about" class="about top-bar-element">
+          <i class="fa fa-globe"></i>
+          <label class="top-bar-element-lable">About</label>
+        </div>
+      </a>
+      <a href="contact.html" class="nav-link">
+        <div id="contact" class="contact top-bar-element">
+          <i class="far fa-id-card"></i>
+          <label class="top-bar-element-lable">Contact</label>
+        </div>
+      </a>
+
+      <a href="" class="nav-link">
+        <div id="signin" class="top-bar-element">
+          <i class="fa fa-sign-in-alt"></i>
+          <label class="top-bar-element-lable">Login</label>
+        </div>
+      </a>
       <div class="hamburger">
         <span class="hamburger__top-bun"></span>
         <span class="hamburger__bottom-bun"></span>
       </div>
-    </nav>      
-      
+    </nav>
+
     <main class="page-content">
-      <div class = "test-div primary">
-        Test
-      </div>
-      <div class = "test-div secondary">
-        Test
-      </div>
-      <div class = "test-div accent">
-        Test
-      </div>
-      <div class = "test-div accent-dark">
-        Test
-      </div>
-      <div class = "test-div accent-light">
-        Test
-      </div>
-      <p class = "heading">Test</p>
-      <p class = "lable">Test</p>
-      <p class = "title">Test</p>
-      <p class = "normal">Test</p>
-      <p class = "normal-bold">Test</p>
-      <p class = "small">Test</p>
-      <p class = "light">Test</p>
-      
+      <p class="heading greeting">WELCOME</p>
     </main>
     <!-- links to javascript -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
